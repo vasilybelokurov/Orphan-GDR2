@@ -29,9 +29,9 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\title[Clouds in Arms]{Clouds in Arms}
+\title[Orphan Stream in Gaia DR2]{Orphan Stream in Gaia DR2}
 
-\author[V. A. Belokurov \& D. Erkal]{Vasily A. Belokurov$^{1,2}$\thanks{E-mail:vasily@ast.cam.ac.uk} \& Denis Erkal$^{3}$\\
+\author[OATs]{OATs: Orphan Aspen TreaSury\\
   $^{1}$Institute of Astronomy, Madingley Rd, Cambridge, CB3 0HA\\
   $^{2}$Center for Computational Astrophysics, Flatiron Institute, 162 5th Avenue, New York, NY 10010, USA\\
   $^{3}$Department of Physics, University of Surrey, Guildford GU2 7XH, UK\\
@@ -45,14 +45,7 @@
 
 \begin{abstract}
 We use astrometry and broad-band photometry from Data Release 2 of the
-ESA's Gaia mission to map out low surface-brightness features in the
-stellar density distribution around the Large and Small Magellanic
-Clouds. The LMC appears to have grown two thin and long stellar
-streams in its Northern and Southern regions, highly reminiscent of
-spiral arms. We use computer simulations of the Magellanic Clouds'
-in-fall to demonstrate that these arms were likely pulled out of the
-LMC's disc due to the combined influence of the SMC's most recent
-fly-by and the tidal field of the Milky Way.
+ESA's Gaia mission.
 
 \end{abstract}
 
@@ -62,53 +55,12 @@ Milky Way -- galaxies: dwarf -- galaxies: structure -- Local Group -- stars
 
 \section{Introduction}
 
-Stellar discs are fragile and even a quick, low mass-ratio encounter
-with a neighboring galaxy can cause plenty of damage. The blockbuster
-by \citet{Toomre1972} provides a gallery of salient moments of such
-interactions as well as a comprehensive analysis of plausible
-outcomes. Let us provide a digest of their findings as to the
-formation of arms and bridges between companion galaxies. First,
-\citet{Toomre1972} point out that the damage is inflicted via tidal
-forces, which are roughly symmetric with respect to the disc's
-host. Thus, a single passage will always produce two arms (whose
-relative strengths depend on the perturber's orbit) on opposite sides
-of the disc.  No slow interaction is needed, relatively fast
-(parabolic) orbits will also lead to arm formation. Naturally, smaller
-perturbers pull out tidier, i.e. more coherent arms as the fly-by of a
-massive neighbor causes a messier debris splatter. However, smaller
-perturbers take more time to pull out long arms and have to come
-closer to the disc compared to the massive ones. \citet{Toomre1972}
-highlight repeatedly how narrow the tidally-induced arms are, but take
-care to point out that this thinness is quite often the result of the
-perspective, in fact most arms are ``ribbons'', not ``strings''. While
-arm production can be thought of as a resonance phenomenon \citep[see
-  aslo][]{Elena2010}, even highly inclined encounters produce dramatic
-arms. In the latter case, arms usually twist considerably in 3D, and
-while appearing face-onÄù for some viewing angles are clearly pulled
-out of the disc plane.
 
-While the study of \citet{Toomre1972} is motivated by such iconic
-images as that of e.g. M51, one can find several {\it very local}
-examples of low mass-ratio galaxy conflicts with dramatic
-consequences. Most notably, as described in
-\citet{Laporte2017,Laporte2018}, the Sagittarius (Sgr) dwarf - itself
-barely a twentieth of the Milky Way's (MW) mass - has likely wrought
-plenty of havoc in the Galaxy's disc. The dwarf is now held
-responsible for inducing a large-scale spiral structure in the Galaxy
-\citep[see e.g.][]{Purcell2011}, creating a warp in the gaseous disc
-\citep[see e.g.][]{Gibbons2017} and sending large-amplitude waves
-through the stellar disc
-\citep[e.g.][]{Widrow2012,Ralph2017,Xu2015}. Most interesting are the
-long thin streams of stars likely pulled out of the Galactic disc
-\citep[see][]{Carl2006,Carl2011,deBoer2018,Deason2018} that do look
-remarkably similar to the tidal arms described in \citet{Toomre1972}
-and that can now be used for a variety of chemo-dymamical studies of
-both the MW and the Sgr dwarf \citep[see][]{Laporte2018}.
 
 %
 \begin{figure*}
   \centering
-  \includegraphics[width=0.95\textwidth]{lmc_selection_paper.ps}
+  \includegraphics[width=0.95\textwidth]{orphan_paper_xyz.pdf}
   \caption[]{The Magellanic Clouds in Gaia DR2. Only stars with
     parallax $\varpi<0.2$ mas are used. {\it Left:} Logarithm of the
     density of the outer LMC stars in $G$ vs $G_{\rm BP}-G_{\rm RP}$
@@ -163,8 +115,7 @@ of the SMC \citep[see also][who argued for the importance of repeated
 %
 \begin{figure*}
   \centering
-  \includegraphics[width=0.97\textwidth]{lmc_map_paper.ps}
-  \vskip -0.1cm
+  \includegraphics[width=0.97\textwidth]{orphan_paper_xyz_members.pdf}
   \caption[]{ {\it Left:} Map of the distribution of the total dust
     extinction centered on the LMC as measured by \citet{SFD} {\it
       Middle:} Density of the candidate RGB stars selected using cuts
@@ -278,10 +229,9 @@ Figure~\ref{fig:map}, the LMC appears to have two long arms, one in
 the North and its counter-part in the South.
 
 %
-\begin{figure}
+\begin{figure*}
   \centering
-  \includegraphics[width=0.47\textwidth]{lmc_velocity_paper.ps}
-  \vskip -0.2cm
+  \includegraphics[width=0.9\textwidth]{orphan_paper_phi1_members.pdf}
   \caption[]{Kinematics of the selected RG stars. {\it Left Column:}
     Median values of $\mu_{\rm L}$ (top) and $\mu_{\rm B}$ (bottom) PM
     components in each pixel of $L_{\rm MS}, B_{\rm MS}$. {\it Right
@@ -290,7 +240,7 @@ the North and its counter-part in the South.
     variations mapped here are much larger than the Gaia PM
     systematics of $\sim$0.04 mas year$^{-1}$ \citep[see][]{Arenou2018}.}
    \label{fig:vel}
-\end{figure}
+\end{figure*}
 %
 
 To clarify the origin of the stellar over-densities described above,
@@ -321,36 +271,6 @@ as an intrinsic rotation signal \citep[see e.g.][]{Helmi2018}, we
 suggest it could also be the result of the strong tidal stretching of
 the SMC by the LMC \citep[see also][]{Zivick2018}.
 
-
-%
-\begin{figure*}
-  \centering
-  \vskip -0.2cm
-  \includegraphics[width=\textwidth]{lmc_sim_multi_snap_plus_lmc}
-  \vskip -0.2cm
-  \caption[]{Simulated LMC disc in the presence of the MW and the SMC
-    in Magellanic Stream coordinates. The left-most set of columns
-    show the LMC evolved in the presence of only the MW. The
-    second (third) set of columns shows the LMC evolved in the
-    presence of only a $5\times 10^{9} M_\odot$ ($10^{11} M_\odot$)
-    SMC. The fourth column shows the fiducial LMC evolved in the
-    combined presence of the MW and a $5\times 10^9 M_\odot$
-    SMC while the fifth column shows a $2\times 10^{11} M_\odot$ LMC
-    evolved in the same setup. The two rows show two different
-    realizations of LMC and SMC. The top (bottom) row shows an LMC
-    with a closer (more distant) encounter with the SMC. These panels
-    show that the MW and SMC are responsible for different
-    features in the LMC disc. The tidal field of the MW
-    predominantly bends the Northern part of the LMC disc, creating
-    one of the spiral features. The influence of the SMC can create
-    one or two spiral arms with the Southern spiral being more
-    prominent. Together, the MW and SMC create two spirals as
-    seen in the Gaia data (i.e. Fig. \protect\ref{fig:map}). Finally,
-    the rightmost column shows that increasing the LMC mass results in
-    a smaller deflection of the LMC disc due to the MW.}
-   \label{fig:sim_multi}
-\end{figure*}
-%
 
 The right column of the Figure presents dispersions around the median
 values of PM components $\mu_{\rm L}$ and $\mu_{\rm B}$ for each pixel
@@ -479,16 +399,14 @@ unprecedentedly large distances.
 
 \section*{Acknowledgments}
 
-We thank Dougal Mackey, Adrian Price-Whelan, David Hogg, Gurtina
-Besla, David Schiminovich, Alis Deason and Sergey Koposov for
-illuminating discussions. The research leading to these results has
-received funding from the European Research Council under the European
-Union's Seventh Framework Programme (FP/2007-2013) / ERC Grant
-Agreement n. 308024. This research was started at the NYC Gaia DR2
-Workshop at the Center for Computational Astrophysics of the Flatiron
-Institute in April 2018 and made use of data from the European Space
-Agency mission Gaia (http://www.cosmos.esa.int/gaia), processed by the
-Gaia Data Processing and Analysis Consortium (DPAC,
+We thank Michael for illuminating discussions. The research leading to
+these results has received funding from the European Research Council
+under the European Union's Seventh Framework Programme (FP/2007-2013)
+/ ERC Grant Agreement n. 308024. This research was started at the NYC
+Gaia DR2 Workshop at the Center for Computational Astrophysics of the
+Flatiron Institute in April 2018 and made use of data from the
+European Space Agency mission Gaia (http://www.cosmos.esa.int/gaia),
+processed by the Gaia Data Processing and Analysis Consortium (DPAC,
 http://www.cosmos.esa.int/web/gaia/dpac/consortium). Funding for the
 DPAC has been provided by national institutions, in particular the
 institutions participating in the Gaia Multilateral Agreement.
