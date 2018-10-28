@@ -26,10 +26,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newcommand{\Gaia}{{\it Gaia}}
+\newcommand{\gaia}{\textit{Gaia} }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\title[Orphan Stream in Gaia DR2]{Orphan Stream in Gaia DR2}
+\title[Orphan Stream in \gaia DR2]{Piercing the Milky Way. Orphan
+  Stream in \gaia DR2}
 
 \author[OATs]{OATs: Orphan Aspen Treasury\\
   $^{1}$Institute of Astronomy, Madingley Rd, Cambridge, CB3 0HA\\
@@ -80,7 +82,7 @@ Milky Way -- galaxies: dwarf -- galaxies: structure -- Local Group -- stars
       BP}-G_{\rm RP} > 1.3$. Black lines outline the PM selection box
     used to improve purity of the tracer population. Note that the
     foreground contribution within the PM box is $<1\%$.}
-   \label{fig:selection}
+   \label{fig:xyzgdr2}
 \end{figure*}
 %
 
@@ -123,7 +125,7 @@ of the SMC \citep[see also][who argued for the importance of repeated
     the median motion maps shown in the left column. Note that PM
     variations mapped here are much larger than the Gaia PM
     systematics of $\sim$0.04 mas year$^{-1}$ \citep[see][]{Arenou2018}.}
-   \label{fig:vel}
+   \label{fig:selection}
 \end{figure*}
 %
 
@@ -162,7 +164,64 @@ not accessible even with the deepest imaging surveys.
 %interaction with the SMC during its most recent passage near the Large
 %Cloud.
 
-\section{Gaia DR2 view of the Magellanic Clouds}
+\section{Orphan Stream with \gaia DR2 RR Lyrae}
+
+We select a high-purity all-sky sample of RR Lyrae candidate stars
+from two separate source catalogues released as part of the \gaia DR2
+\citep[][]{Prusti2016, Brown2018}. More precisely, tables
+\texttt{vari\_classifier\_result} and \texttt{vari\_rrlyrae}
+\citep[see][]{Clementini2018,Holl2018} are joined, removing the
+duplicates, and the stellar astrometry and photometry are obtained
+from the main \texttt{gaia\_source} catalogue. We have culled
+potential interlopers requiring \textit{phot\_bp\_rp\_excess\_factor}
+to be less than 3 and have assumed $A_G=2.27$ and $M_G=0.64$ for the
+extinction coefficient and the RRL absolute magnitude in the \Gaia's
+$G$ band respectively \citep[see][for further
+  details]{Iorio2018}. Additionally, we have assumed the Sun's
+distance from the Galactic center of 8 kpc, the Local Standard or Rest
+(LSR) of 235 km s$^{-1}$ and the Sun's peculiar motion as given in
+\citet{LSR}.
+
+To select the likely OS members, we translate the stellar celestial
+coordinates in equatorial system $\alpha, \delta$ into a new
+coordinate system $\phi_1, \phi_2$ aligned with the stream \citep[see
+  e.g.][]{Koposov2010}. More specifically, based on the OS detections
+reported in \citet{OS_V, OS_C, Newberg2010}, we use a great circle
+with a pole at $(\alpha_{\rm OS}, \delta_{\rm OS})=(70.5^{\circ},
+-13^{\circ})$. The origin of this stream's coordinate system is chosen
+to be at $(\alpha_0, \delta_0)=(188^{\circ}, -63^{\circ})$, near the
+position of the OS's crossing of the Galactic disc. Several attempts
+at the OS kinematic characterization can be found in
+\citet{Newberg2010} and \citet{Sohn2016}. Given the OS's line-of-sight
+velocity and the HST-based proper motions, we notice that the stream's
+velocity component along the Galactic longitude $v_l$ remains negative
+irrespective of the debris position on the sky, i.e. the stream is in
+prograde motion with respect to the Galactic rotation. Accordingly, we
+explore the distribution of the possible OS members selected with the
+following simple cuts.
+
+%
+\begin{equation}
+  \begin{aligned}
+    |\phi_2| &< 4^{\circ}\\
+    -300<v_l &<-100\\
+    -300<v_b &<300
+  \end{aligned}
+\end{equation}
+%
+
+Figure~\ref{fig:selection} shows the distributions of $\sim$1,500 RRL
+stars selected with the above cuts in Galacto-centric coordinates
+$X,Y$ and $Z$; here $X$ points to the Galactic anti-center and the Sun
+is at $(X,Y,Z)=(8,0,0)$. A long and narrow arc or RRL stars is visible
+in all three projections, crossing the Galaxy from the North (where it
+is seen at $Z>0$ and $X>0$) to the South (where the signal is ar $Z<0$
+and $X<0$). The stream spans a gigantic $\sim$100 kpc, traveling in
+almost uninterrupted fashion through the Milky Way, coming as close as
+$\sim$15 kpc to its center and reaching as far as $\sim$50 kpc into
+the halo. While the Northern portion of the stream had been seen
+before with SDSS and PS1, the view of its Southern Galactic section
+uncovered with \gaia DR2 is entirely new.
 
 In what follows we use the photometry and astrometry provided as part
 of the Data Release 2 \citep[][]{Brown2018} of the Gaia mission
