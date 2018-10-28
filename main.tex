@@ -63,25 +63,12 @@ Milky Way -- galaxies: dwarf -- galaxies: structure -- Local Group -- stars
 \begin{figure*}
   \centering
   \includegraphics[width=0.95\textwidth]{orphan_paper_xyz.pdf}
-  \caption[]{The Magellanic Clouds in Gaia DR2. Only stars with
-    parallax $\varpi<0.2$ mas are used. {\it Left:} Logarithm of the
-    density of the outer LMC stars in $G$ vs $G_{\rm BP}-G_{\rm RP}$
-    space (all de-reddened). {\it Middle Left:} Logarithm of the
-    density of stars in the Galactic foreground near the Clouds
-    (i.e. stars above $|b|=5^{\circ}$ and between $20^{\circ}$ and
-    $60^{\circ}$ from the LMC, excluding an area with a $10^{\circ}$
-    radius around the SMC). {\it Middle Right:} The difference of the
-    CMD densities shown in the first two panels. Apart from some minor
-    contamination at faint $G$ and red $G_{\rm BP}-G_{\rm RP}$, the
-    strongest over-density is that corresponding to the LMC's red
-    giant branch. The black-white dashed line shows the CMD mask used
-    to select the likely LMC (and SMC) giants. {\it Right:} Logarithm
-    of stellar density in PM space. In addition to the CMD selection
-    shown in the middle panels, we select stars within $15^{\circ}$
-    ($10^{\circ}$) of the LMC's (SMC's) center and with $G_{\rm
-      BP}-G_{\rm RP} > 1.3$. Black lines outline the PM selection box
-    used to improve purity of the tracer population. Note that the
-    foreground contribution within the PM box is $<1\%$.}
+  \caption[]{Galacto-centric distributions of the $\sim1,500$ \gaia
+    DR2 RR Lyrae stars projected close to the OS on the sky. Only
+    stars with $|\phi_2|<4^{\circ}$ and $-300<v_l <-100$, $-300<v_b
+    <300$ are shown. {\it Left:} $X,Z$ plane. {\it Middle:} $Y,Z$
+    plane. {\it Right:} $X,Y$ plane. Note a prominent, narrow and long
+    stream-like over-density visible in all three panels.}
    \label{fig:xyzgdr2}
 \end{figure*}
 %
@@ -118,13 +105,7 @@ of the SMC \citep[see also][who argued for the importance of repeated
 \begin{figure*}
   \centering
   \includegraphics[width=0.9\textwidth]{orphan_paper_selection.pdf}
-  \caption[]{Kinematics of the selected RG stars. {\it Left Column:}
-    Median values of $\mu_{\rm L}$ (top) and $\mu_{\rm B}$ (bottom) PM
-    components in each pixel of $L_{\rm MS}, B_{\rm MS}$. {\it Right
-      Column:} PM dispersion (around the median) maps corresponding to
-    the median motion maps shown in the left column. Note that PM
-    variations mapped here are much larger than the Gaia PM
-    systematics of $\sim$0.04 mas year$^{-1}$ \citep[see][]{Arenou2018}.}
+  \caption[]{OS member selection. {\bf SK to provide details}}
    \label{fig:selection}
 \end{figure*}
 %
@@ -134,15 +115,9 @@ of the SMC \citep[see also][who argued for the importance of repeated
 \begin{figure*}
   \centering
   \includegraphics[width=0.97\textwidth]{orphan_paper_xyz_members.pdf}
-  \caption[]{ {\it Left:} Map of the distribution of the total dust
-    extinction centered on the LMC as measured by \citet{SFD} {\it
-      Middle:} Density of the candidate RGB stars selected using cuts
-    illustrated in Figure~\ref{fig:selection} and described in the
-    main text. Filled black circle marks the location of the Carina
-    dwarf spheroidal galaxy. {\it Right:} Same as Middle but saturated
-    at lower density levels. Number of stars per square degree
-    corresponding to the white (low density) and black (high density)
-    is given in the title.}
+  \caption[]{Companion of Figure~\ref{fig:xyzgdr2}. Here only the
+    likely OS members (see Figure~\ref{fig:selection} and main text
+    for details) are shown in Galacto-centric coordinates.}
    \label{fig:xyzmem}
 \end{figure*}
 %
@@ -287,134 +262,27 @@ smoother. Therefore, some of the change in the proper motions (shown
 in the second row from the top) is due to the change in the
 line-of-sight distance.
 
-Figure ~\ref{fig:selection} shows the behavior of stars with
-$\varpi<0.2$ mas in the vicinity of the Clouds in color-magnitude and
-proper motion (PM) spaces. More precisely, the left panel displays the
-density of stars within 12 degrees of the LMC's center in $G$ vs
-$G_{\rm BP}-G_{\rm RP}$ plane (Hess diagram). Here we assumed that the
-center of the dwarf is located at $\alpha, \delta =
-80.89375^{\circ},-69.7561^{\circ}$. The CMD signal of the LMC can be
-compared to that of the Galactic foreground shown in the second panel
-of the Figure. We give the difference of the two in the third
-panel. In this Hess difference plot, the LMC's Red Giant Branch (RGB)
-and the Red Clump (RC) are easily discernible (their envelope is
-traced by black-and-white dashed line). Note that the tip of the RGB
-runs horizontally (i.e. at constant $G$) for colors redder than
-$G_{\rm BP}-G_{\rm RP} \simeq 2$. While the RC is the most densely
-populated CMD feature, it is also the one that suffers the highest
-Galactic foreground contamination, especially at $G_{\rm BP}-G_{\rm
-  RP}<0.9$ and $G>19$. Therefore, to select the likely Magellanic
-stars we choose objects with $\varpi<0.2$ mas that fall within the CMD
-mask (broad enough to accommodate the heliocentric distance range
-across the Magellanic system) shown in panels 2 and 3 of
-Figure~\ref{fig:selection} and have $G_{\rm BP}-G_{\rm RP}>0.9$ and
-$G<19$. Finally, to further improve the purity of our selection we
-apply PM cuts chosen to delineate the motion of genuine LMC and SMC
-stars as shown in the fourth (rightmost) panel of the Figure. Here,
-stars within 15$^{\circ}$ of the LMC and 7$^{\circ}$ of the SMC are
-shown in $\mu_{\rm L}, \mu_{\rm B}$ PM space aligned with the gaseous
-MS \citep[see][for the definition of the $L_{\rm MS}, B_{\rm MS}$
-  coordinate system]{Nidever2008}. Note that to clarify the
-over-densities corresponding to the Clouds, for this panel only, we
-additionally limit the stars to those with $G_{\rm BP}-G_{\rm
-  RP}>1.3$.
-
-The density of the likely Magellanic RGB candidate stars selected
-using a combination of parallax, $|b|$, CMD and PM cuts
-described above is shown in Figure~\ref{fig:map}. The same density map
-is displayed twice, in the middle and right panels of the Figure,
-albeit with different saturation levels to help study features across
-a wide range of surface brightness values. Note that even at
-astonishingly low Galactic latitudes, $|b|<10^{\circ}$, very little
-disc contamination is visible thanks to the power of Gaia's
-astrometry. Comparing the stellar density patterns in panels 2 and 3
-with the dust distribution shown in panel 1, we conclude that the
-only noticeable correlation between the two maps can be seen in the
-very cores of each Cloud, where the star counts are depleted by high
-values of extinction. Figure~\ref{fig:map} reveals an intricate and
-spatially extended system of narrow stream-like structures emanating
-from the LMC's disc. A large portion of the Northern arm was already
-discussed in \citet{Mackey2016}, where it was traced out to
-$\sim20^{\circ}$ away from the LMC's center. Here we show that this
-structure continues to higher $L_{\rm MS}$ for (at least) some
-$5^{\circ}$ to $10^{\circ}$, passing right under the Carina dwarf,
-where, as pointed in \citet{Mackey2016}, the LMC's stars have been
-detected before \citep[see][]{Majewski2000, McMonigal2014}. In the
-Southern regions of the LMC, a more complicated web of sub-structures
-can be seen. There are two ``claw''-like over-densities, identified as
-``Substructure 1'' and ``Substructure 2'' in
-\citet{Mackey2018}. Curiously, in the maps presented here,
-``Substructure 2'' appears to be curving clockwise, continuing as far
-as $(L_{\rm MS}, B_{\rm MS})=(10^{\circ},-5^{\circ})$. One of the most
-striking new features is a thin stellar stream which appears to be
-connecting to the SMC at around $L_{\rm MS}\sim-8^{\circ}$. This
-narrow tail, one of the longest structures discussed here, wraps
-around the Southern edge of the LMC's disc, tracing an arc of
-$\sim$90$^{\circ}$ in clockwise direction. As gleaned from
-Figure~\ref{fig:map}, the LMC appears to have two long arms, one in
-the North and its counter-part in the South.
-
 %
 \begin{figure*}
   \centering
   \includegraphics[width=0.9\textwidth]{orphan_paper_phi1_members.pdf}
-  \caption[]{Kinematics of the selected RG stars. {\it Left Column:}
-    Median values of $\mu_{\rm L}$ (top) and $\mu_{\rm B}$ (bottom) PM
-    components in each pixel of $L_{\rm MS}, B_{\rm MS}$. {\it Right
-      Column:} PM dispersion (around the median) maps corresponding to
-    the median motion maps shown in the left column. Note that PM
-    variations mapped here are much larger than the Gaia PM
-    systematics of $\sim$0.04 mas year$^{-1}$ \citep[see][]{Arenou2018}.}
+  \caption[]{Phase-space projections of the likely OS member RR Lyrae
+    as a function of the stream longitude $\phi_1$. {\it Top left:}
+    Positions of the OS stars on the sky in the stream-aligned
+    coordinates $\phi_1, phi_2$. {\it Top right:} Heliocentric
+    distance as a function of $\phi_1$. {\it Second row, left:} RA
+    component of proper motion $\mu_{\alpha}$. {\it Second row,
+      right:} Dec component of proper motion $\mu_{\delta}$. {\it
+      Third row, left:} Velocity component along Galactic longitude
+    $v_l$. {\it Third row, right:} Velocity component along Galactic
+    latitude $v_b$. {\it Bottom left:} Along-stream velocity
+    $v_{\phi,1}$. {\it Bottom right:} Across-stream velocity
+    $v_{\phi,2}$.}
    \label{fig:memother}
 \end{figure*}
 %
 
-To clarify the origin of the stellar over-densities described above,
-Figure~\ref{fig:vel} gives the PMs of the selected LMC's candidate RGB
-stars. Note that these PMs have been corrected for the Solar reflex
-assuming a constant heliocentric distance of 49.9 kpc. The pattern of
-the median PM values (left column of the Figure) across the inner
-$10^{\circ}$ (smaller dashed circle) is dominated by the gradient
-associated with the Cloud's rotation \citep[see
-  also][]{Vasiliev2018}. Note, however, that the stellar motions
-preserve coherence well outside the central LMC. More fascinating
-still, all of the narrow arm-like features at distances beyond
-$\sim15^{\circ}$ also display coherent systematic motions. Overall,
-the kinematics of the Northern and Southern arms resembles that of the
-outer LMC's disc but off-set in orbital phase. Note that the bulk of
-the Southern sub-structure shares the PM of the LMC. This is
-especially evident in the lower left panel, where the stellar streams
-have colors from green to red, similar the LMC's disc, while the SMC
-is dark blue. While not the main focus of this Letter, it is worth
-commenting briefly on the PM pattern of the SMC. According to
-Figure~\ref{fig:vel}, the SMC's systemic motion is in the direction
-away from the LMC, i.e. towards negative $L_{\rm MS}$ and negative
-$B_{\rm MS}$, consistent with previous measurements \citep[see
-  e.g.][]{kallivayalil_lmc_pm}. Also visible are clear proper motion
-gradients, whose direction is roughly aligned with the line connecting
-the centers of the two Clouds. While this gradient could be modelled
-as an intrinsic rotation signal \citep[see e.g.][]{Helmi2018}, we
-suggest it could also be the result of the strong tidal stretching of
-the SMC by the LMC \citep[see also][]{Zivick2018}.
-
-
-The right column of the Figure presents dispersions around the median
-values of PM components $\mu_{\rm L}$ and $\mu_{\rm B}$ for each pixel
-of $L_{\rm MS}$ and $B_{\rm MS}$. Strong perturbations of the inner
-LMC's disc have recently been reported in the literature
-\citep[see][]{Choi2018}, but here, we offer a much more complete map
-of kinematically cold (blue) and hot (red) regions across the entire
-Cloud. The regions of elevated dispersion are clearly different for
-the longitudinal and latitudinal PM components. For
-$\mu_{\rm L}$, the hottest region is on the rim of the LMC's disc
-facing the SMC and in between the Clouds, where one naturally expects
-a mixture of stars from both dwarfs. In $\mu_{\rm B}$, there are two
-extended regions with high PM dispersion, one in the North
-and one in the South, located radially inward from the locations of
-each arm. The arms themselves are distinctly cold as judged by their
-dark blue color.
-
-\section{Simulations, Caveats and Conclusions}
+\section{OS with giants in \gaia and DECaLS}
 
 In order to investigate how the MW and SMC affect the LMC's disc and
 whether they can induce the spiral features shown in Figure
@@ -445,12 +313,11 @@ position and velocity, we use a distance of $49.97 \pm 1.126$ kpc
 \mu_\delta) = (1.91\pm 0.02,0.229\pm0.047)$ mas/yr
 \citep{kallivayalil_lmc_pm}. For the SMC, we use a distance of
 $62.1\pm1.9$ kpc \citep{graczyk_smc_distance}, a radial velocity of
-$145.6\pm0.6$ km/s \citep{harris_smc_vel}, and PMs of
-$(\mu_\alpha \cos \delta, \mu_\delta) = (0.772\pm
-0.063,-1.117\pm0.061)$ mas/yr \citep{kallivayalil_lmc_pm}. For each
-choice of the LMC and SMC masses and scale radii, we sample their
-present day position and velocity and simulate 100 realizations to
-explore the variety of outcomes.
+$145.6\pm0.6$ km/s \citep{harris_smc_vel}, and PMs of $(\mu_\alpha
+\cos \delta, \mu_\delta) = (0.772\pm 0.063,-1.117\pm0.061)$ mas/yr
+\citep{kallivayalil_lmc_pm}. For each choice of the LMC and SMC masses
+and scale radii, we sample their present day position and velocity and
+simulate 100 realizations to explore the variety of outcomes.
 
 In Figure \ref{fig:sim_multi} we isolate the effect of the MW
 (left-most column) and the SMC (middle two columns) on the LMC. The
