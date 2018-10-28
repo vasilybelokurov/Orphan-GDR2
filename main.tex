@@ -143,7 +143,7 @@ of the SMC \citep[see also][who argued for the importance of repeated
     at lower density levels. Number of stars per square degree
     corresponding to the white (low density) and black (high density)
     is given in the title.}
-   \label{fig:map}
+   \label{fig:xyzmem}
 \end{figure*}
 %
 
@@ -210,7 +210,7 @@ following simple cuts.
 \end{equation}
 %
 
-Figure~\ref{fig:selection} shows the distributions of $\sim$1,500 RRL
+Figure~\ref{fig:xyzgdr2} shows the distributions of $\sim$1,500 RRL
 stars selected with the above cuts in Galacto-centric coordinates
 $X,Y$ and $Z$; here $X$ points to the Galactic anti-center and the Sun
 is at $(X,Y,Z)=(8,0,0)$. A long and narrow arc or RRL stars is visible
@@ -221,20 +221,63 @@ almost uninterrupted fashion through the Milky Way, coming as close as
 $\sim$15 kpc to its center and reaching as far as $\sim$50 kpc into
 the halo. While the Northern portion of the stream had been seen
 before with SDSS and PS1, the view of its Southern Galactic section
-uncovered with \gaia DR2 is entirely new.
+uncovered here with \gaia DR2 is entirely new.
 
-In what follows we use the photometry and astrometry provided as part
-of the Data Release 2 \citep[][]{Brown2018} of the Gaia mission
-\citep[][]{Prusti2016}. We correct the $G, G_{\rm BP}$ and $G_{\rm
-  RP}$ magnitudes for the effects of extinction using the first two
-terms in the Equation 1 of \citet{Babusiaux2018} and the dust maps of
-\citet{SFD}. Additionally, we remove the foreground dwarf stars from
-our sample by culling all objects with parallax $\varpi>0.2$ mas and
-exclude stars with Galactic latitudes $|b|<5^{\circ}$. We note that
-this is not the first attempt to use GDR2 to study the LMC (and the
-SMC): the kinematic view of the inner portions of each Cloud can be
-found in \citet{Helmi2018}, while \citet{Vasiliev2018} presents the
-first results of dynamical modelling of the inner LMC.
+We can further clean the OS membership by looking closely at the
+behavior of the RRL stars close to the equator of the stream's
+coordinate system. To this end, Figure~\ref{fig:selection} shows the
+distribution of RR Lyrae as a function of the along-stream coordinate
+$\phi_2$. As the top panel of the Figure illustrates, the stream spans
+some $\sim200^{\circ}$ in $\phi_1$ while exhibiting a slight bend of
+several degrees in $\phi_2$. The heliocentric distance of the Orphan
+debris changes slowly within $-50^{\circ}<\phi_1<50^{\circ}$, but
+beyond that, the stream appears to shoot rapidly to large distances,
+reaching $\sim50$ kpc on either end. Finally, a clear kinematic
+pattern is visible in the bottom panel of Figure~\ref{fig:selection},
+where the stream $\mu_{\phi,1}$ proper motion arches up to $\sim$4 mas
+year$^{-1}$ around $\phi_1\sim40^{\circ}$ from values close to $\sim0$
+mas year$^{-1}$ near the tips of the stream. Note that in all three
+projections, the width of the stream also changes as a function of
+$\phi_1$. Some of this variation may be due to the intrinsic evolution
+of the debris density along the stream \citep[see e.g.][]{stray}, but
+much of it may plausibly be associated with the change in the
+measurement quality. As the stream moves away from the Sun at high
+values of $|\phi_1|$, the associated errors in distance and proper
+motion grow quickly, increasing the scatter around the stream's
+centroid. 
+
+Each panel of Figure~\ref{fig:selection} shows a sample of stars
+selected after applying the polynomial masks from the other two panels
+(the masked areas are highlighted in pale blue in each panel). The
+boundaries of the masks are chosen to wrap around the bulk of the
+stream's debris in a smooth and continuous manner. More precisely, the
+masks are drawn as follow {\bf SK to explain}. The parameters of the
+polynomials used for the stream selection are given in table XXX. {\bf
+  SK to supply}. Applying all three masks shown in the Figure yields
+the total of NNN OS candidate members. Table YYY lists all RRL stars
+identified using the procedure described above together with their
+positional and kinematic measurements from GDR2. {\bf Table
+  needed}.
+
+Figure~\ref{fig:xyzmem} is a companion to Figure~\ref{fig:xyzgdr2} as
+it also shows the Galacto-centric positions of the \gaia RR Lyrae
+stars, but now only those selected using the masks described
+above. Left panel of the Figure emphasizes the high eccentricity of
+the OS as the stream appears high stretched in this
+projection. Noticeable in the middle and right panels of the Figure is
+the change in the stream's curvature between the Southern and the
+North Galactic hemispheres. The view of the OS in other phase-space
+projections can be found in Figure~\ref{fig:memother}.
+
+Top left panel of the Figure presents the positions of the likely
+stream members on the sky in the stream-aligned coordinate
+system. Immediately apparent is the striking change of the stream
+curvature around $\phi_1\sim20^{\circ}$ - immediately after the stream
+re-emerges after passing through the Galactic disc - where the debris
+behavior changes from gently slopping down to sharply rising up in
+$\phi_2$. Additionally, in the Northern end of the stream, at
+$\phi_1\sim100^{\circ}$ there appears to be a curious hook
+downwards. Kinematically, 
 
 Figure ~\ref{fig:selection} shows the behavior of stars with
 $\varpi<0.2$ mas in the vicinity of the Clouds in color-magnitude and
@@ -258,15 +301,15 @@ mask (broad enough to accommodate the heliocentric distance range
 across the Magellanic system) shown in panels 2 and 3 of
 Figure~\ref{fig:selection} and have $G_{\rm BP}-G_{\rm RP}>0.9$ and
 $G<19$. Finally, to further improve the purity of our selection we
-apply PM cuts chosen to delineate the motion of genuine LMC
-and SMC stars as shown in the fourth (rightmost) panel of the
-Figure. Here, stars within 15$^{\circ}$ of the LMC and 7$^{\circ}$ of
-the SMC are shown in $\mu_{\rm L}, \mu_{\rm B}$ PM space
-aligned with the gaseous MS \citep[see][for the definition of the
-  $L_{\rm MS}, B_{\rm MS}$ coordinate system]{Nidever2008}. Note that
-to clarify the over-densities corresponding to the Clouds, for this
-panel only, we additionally limit the stars to those with $G_{\rm
-  BP}-G_{\rm RP}>1.3$.
+apply PM cuts chosen to delineate the motion of genuine LMC and SMC
+stars as shown in the fourth (rightmost) panel of the Figure. Here,
+stars within 15$^{\circ}$ of the LMC and 7$^{\circ}$ of the SMC are
+shown in $\mu_{\rm L}, \mu_{\rm B}$ PM space aligned with the gaseous
+MS \citep[see][for the definition of the $L_{\rm MS}, B_{\rm MS}$
+  coordinate system]{Nidever2008}. Note that to clarify the
+over-densities corresponding to the Clouds, for this panel only, we
+additionally limit the stars to those with $G_{\rm BP}-G_{\rm
+  RP}>1.3$.
 
 The density of the likely Magellanic RGB candidate stars selected
 using a combination of parallax, $|b|$, CMD and PM cuts
@@ -314,7 +357,7 @@ the North and its counter-part in the South.
     the median motion maps shown in the left column. Note that PM
     variations mapped here are much larger than the Gaia PM
     systematics of $\sim$0.04 mas year$^{-1}$ \citep[see][]{Arenou2018}.}
-   \label{fig:vel}
+   \label{fig:memother}
 \end{figure*}
 %
 
