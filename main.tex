@@ -73,33 +73,6 @@ Milky Way -- galaxies: dwarf -- galaxies: structure -- Local Group -- stars
 \end{figure*}
 %
 
-It so happened that the most striking example of a nearby binary
-interaction was only just being discovered at the time of the writing
-of \citet{Toomre1972} and hence could not be included in their
-analysis. \citet{Wannier1972} and \citet{Kuilenburg1972} detected long
-streams of HI in the Southern sky, and some two years later these were
-shown to connect to the Magellanic Clouds by
-\citet{Mathewson1974}. The Magellanic Stream (MS, as it is known
-today) has since been mapped across the sky \citep[see
-  e.g.][]{Putman2003,Nidever2008,Nidever2010} and is today
-unambiguously demonstrated to have originated in the interaction
-between the Large and the Small Clouds \citep[LMC and
-  SMC,][]{Besla2007, Besla2010, Diaz2011, Diaz2012}. While the stellar
-counterpart to the MS is yet to be discovered, the last two years have
-seen a marked increase in the number of reported detections of low
-surface-brightness stellar sub-structure in the vicinity of the Clouds
-\citep[see
-  e.g.][]{Mackey2016,Belokurov2016,Belokurov2017,Deason2017,Pieres2017,Mackey2018,Nidever2018}. In
-particular, \citet{Mackey2016,Mackey2018} concentrate on the
-perturbations in and around the LMC's stellar disc. They uncover a
-wealth of sub-structure, some of which (such as the long stream-like
-feature in the North of the LMC) they tentatively attribute to the
-tidal influence of the MW \citep[][]{Mackey2016}. They also
-detect prominent stellar debris over-densities in the Southern parts
-of the LMC and put forward two formation scenarios: one to do with the
-disruption of the LMC's disc and one linked to the episodic stripping
-of the SMC \citep[see also][who argued for the importance of repeated
-  interactions with the SMC]{besla_etal_2016}.
 
 %
 \begin{figure*}
@@ -122,22 +95,6 @@ of the SMC \citep[see also][who argued for the importance of repeated
 \end{figure*}
 %
 
-In this Letter, we use a combination of Gaia's (Data Release 2, or
-GDR2) photometry and astrometry to produce an uninterrupted panorama
-of the Magellanic Clouds. We focus on the density fluctuations between
-10 and 30 degrees away from the LMC's centre. While our maps do not
-attain the same level of detail achievable using deep imaging with
-instruments such as DECam, they help to fill in the gaps in the
-Magellanic puzzle. Moreover, Gaia's astrometry has the
-unprecedented power to remove the bulk of the intervening MW's
-disc population and thus extend the study of the Clouds to regions
-not accessible even with the deepest imaging surveys.
-
-%Specifically, we demonstrate that two long and narrow tidal arms exist
-%in the Northern and Southern outskirts of the LMC's disc, most likely
-%produced as a result of the combined effect of the MW tides and the
-%interaction with the SMC during its most recent passage near the Large
-%Cloud.
 
 \section{Orphan Stream with \gaia DR2 RR Lyrae}
 
@@ -284,111 +241,6 @@ line-of-sight distance.
 
 \section{OS with giants in \gaia and DECaLS}
 
-In order to investigate how the MW and SMC affect the LMC's disc and
-whether they can induce the spiral features shown in Figure
-\ref{fig:map}, we have run a series of simulations in the spirit of
-\cite{Toomre1972}. In particular, we simulate the disc of the LMC as a
-series of particles in concentric rings which are initially on
-circular orbits. While this ignores the initial non-circular motions,
-it captures the overall behavior of the disc over the relatively short
-timescales considered here. The system is then evolved in the presence
-of the MW and the SMC. We model the LMC's potential as a Hernquist
-profile \citep{hernquist_profile} which satisfies the rotation curve
-measurement at a radius of 8.7 kpc from \cite{vandermarel_lmc} (for
-each LMC mass, the scale radius is fixed by this constraint). The
-initial orientation and rotation sense of the LMC are chosen to match
-the observations from \cite{vandermarel_lmc}. The SMC is also modelled
-as a Hernquist profile satisfying the rotation curve measurement at a
-radius of 3 kpc from \cite{staminirovic_smc_mass}. The MW is modelled
-as the 3-component potential, \texttt{MWPotential2014}, from
-\cite{galpy}. Starting from their present day positions, the LMC and
-SMC are rewound for 1 Gyr (in the presence of each other and the MW),
-at which point particles are placed on circular orbits around the
-LMC. For each simulation, we place 5000 particles on 50 separate
-concentric circles with radii evenly spaced from 1 to 20 kpc. The
-simulation is then evolved to the present. For the LMC's present day
-position and velocity, we use a distance of $49.97 \pm 1.126$ kpc
-\citep{pietrzynski_lmc_dist}, a radial velocity of $-262.2\pm3.4$ km/s
-\citep{vandermarel_lmc_rv}, and PMs of $(\mu_\alpha \cos \delta,
-\mu_\delta) = (1.91\pm 0.02,0.229\pm0.047)$ mas/yr
-\citep{kallivayalil_lmc_pm}. For the SMC, we use a distance of
-$62.1\pm1.9$ kpc \citep{graczyk_smc_distance}, a radial velocity of
-$145.6\pm0.6$ km/s \citep{harris_smc_vel}, and PMs of $(\mu_\alpha
-\cos \delta, \mu_\delta) = (0.772\pm 0.063,-1.117\pm0.061)$ mas/yr
-\citep{kallivayalil_lmc_pm}. For each choice of the LMC and SMC masses
-and scale radii, we sample their present day position and velocity and
-simulate 100 realizations to explore the variety of outcomes.
-
-In Figure \ref{fig:sim_multi} we isolate the effect of the MW
-(left-most column) and the SMC (middle two columns) on the LMC. The
-two rows show two different realizations of the LMC and SMC's present
-day position and velocity. The top row shows an LMC with a closer
-encounter with the SMC ($r_{\rm peri} \sim 10$ kpc), while the bottom
-row shows a more distant encounter ($r_{\rm peri} \sim 15$ kpc). The
-tidal field of the MW is primarily responsible for bending the
-Northern half of the LMC, similar to what was found in $N$-body
-simulations in \cite{Mackey2016}, and creates a spiral arm feature
-similar in position and orientation to what it seen in the data. The
-SMC can create one or two spiral arms, depending on how strong of an
-interaction it has with the LMC during its most recent
-pericenter. While this is in seeming contradiction to the results of
-\cite{Toomre1972}, we stress that we are observing the LMC disc only
-$\sim 150$ Myr after its most recent passage with the SMC and that it
-takes time for the spiral features to form. If the LMC was simulated
-for longer, the second spiral would form in the lower panel of Figure
-\ref{fig:sim_multi}. Interestingly, we find that the SMC creates a
-strong spiral arm in the South which matches the observed Southern
-stream. We found that changing the SMC mass from $5\times 10^9
-M_\odot$ to $10^{10} M_\odot$ resulted in only a modest change in the
-spiral features. Our simulations do not contain the ``claw''-like
-features visible in the data in the Southern parts of the LMC. We
-conjecture that these density features are remnants of much earlier
-interactions between the two Clouds. The fourth column of the figure
-shows the effect of both the MW and the SMC. This
-demonstrates that their combined effect is needed to create the two
-spirals observed in the LMC. It also illustrates how a close encounter
-with the SMC can truncate the Western portion of the LMC's disc (top,
-second from the right panel) similar to what it seen in the
-data. Taken together, this shows that morphology of the LMC's disc and
-the associated spiral structure can be used to reveal its rich
-dynamical history.
-
-In a similar vein, we also explore the effect of the LMC's mass on its
-morphology in Figure \ref{fig:sim_multi}. While the first four columns
-show a $2\times 10^{10}M_\odot$ LMC, the final column shows a $2\times
-10^{11} M_\odot$ LMC.  Note that the final column should be compared
-with the fourth column since these have the same setup.  As the LMC
-mass is increased, we find that the LMC is deformed less by the
-MW. This is because the increased LMC mass results in a larger tidal
-radius and hence a larger region where the effect of the MW is
-negligible. Interestingly, only the lowest mass LMC we consider
-($2\times 10^{10} M_\odot$) can match the tightly wound spiral seen in
-the North (see Fig. \ref{fig:map}). Since this mass is only slightly
-higher than the mass constraint within 8.7 kpc from
-\cite{vandermarel_lmc}, this could suggest that the LMC has already
-been significantly stripped. However, we stress that these simulations
-are only meant to be the first step in showing that the morphology
-(including spirals) of the LMC's disc can provide useful constraints
-on the properties of the LMC, SMC, and on the tidal effect of the
-MW. With this aim in mind, the rich PMs in Figure
-\ref{fig:vel} will also be useful in future modelling efforts.
-
-In summary, we have used the exquisite data from Gaia DR2 to
-unveil a global view of the perturbations to the LMC's disc. In
-particular, there are two clear spiral features, as well as some complex
-substructure to the South of the LMC (see Fig. \ref{fig:map}). While
-some of this structure was seen before
-\citep[e.g.][]{Mackey2016,Mackey2018}, the uninterrupted view afforded
-by Gaia allows us to better understand how these features
-arose. We simulated the combined effect of the MW and SMC on
-the LMC's disc and found that both are important for creating the
-spiral features seen in the data. Namely, the MW is responsible
-for deforming the Northern part of the LMC while the most recent
-passage of the SMC creates the strong spiral feature in the South. A
-close passage with the SMC can also truncate the Western side of the
-LMC's disc. Finally, we showed that the distant Magellanic Red
-Giants detected here can be used to map out the LMC's mass distribution at
-unprecedentedly large distances.
 
 \section*{Acknowledgments}
 
