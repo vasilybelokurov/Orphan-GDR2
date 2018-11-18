@@ -46,8 +46,25 @@
 \label{firstpage}
 
 \begin{abstract}
-We use astrometry and broad-band photometry from Data Release 2 of the
-ESA's Gaia mission.
+We use astrometry, broad-band photometry and variability information
+from the Data Release 2 of the ESA's Gaia mission (GDR2) to identify
+members of the Orphan Stream (OS) across the whole sky. The stream is
+traced above and below the celestial equator and in both Galactic
+hemispheres, thus increasing its visible length to $\sim210^{\circ}$
+equivalent to $\sim150$ kpc in physical extent. Taking advantage of a
+large number of RR Lyrae in the OS, we extract accurate distances and
+proper motions across the entire stretch of the tidal debris
+studied. Delineated with the GDR2 RR Lyrae, the stream exhibits two
+prominent twists in its shape on the sky accompanied by changes in the
+tangential motion. We complement the RR Lyrae maps with those created
+using GDR2 Red Giants and the DECaLS Main Sequence Turn-Off stars. The
+behavior of the OS track on the sky is consistent across all three
+tracers employed. For the first time, we detect a strong non-zero
+motion in the across-stream direction for a substantial portion of the
+stream under the Galactic plane. Such a misalignment between the
+debris track and the streaming velocity can not be reproduced in a
+static gravitational potential and requires an interaction with a
+massive perturber.
 
 \end{abstract}
 
@@ -88,6 +105,20 @@ component of the motion in the direction aligned with the stream, sets
 the normalization for the mass inside of the debris orbit, while the
 across-stream velocity informs of the possible perturbations
 \citep[see e.g.][]{Erkal2018}.
+
+%
+\begin{figure*}
+  \centering
+  \includegraphics[width=0.95\textwidth]{orphan_paper_xyz.pdf}
+  \caption[]{Galacto-centric distributions of the $\sim1,500$ \gaia
+    DR2 RR Lyrae stars projected close to the OS on the sky. Only
+    stars with $|\phi_2|<4^{\circ}$ and $-300<v_l <-100$, $-300<v_b
+    <300$ are shown. {\it Left:} $X,Z$ plane. {\it Middle:} $Y,Z$
+    plane. {\it Right:} $X,Y$ plane. Note a prominent, narrow and long
+    stream-like over-density visible in all three panels.}
+   \label{fig:xyzgdr2}
+\end{figure*}
+%
 
 One of the first stellar streams discovered as the SDSS unleashed its
 data on the unsuspecting community was Orphan
@@ -136,63 +167,32 @@ individual OS stars with uncertainty of order of $\sim2.5\%$.
 %
 \begin{figure*}
   \centering
-  \includegraphics[width=0.95\textwidth]{orphan_paper_xyz.pdf}
-  \caption[]{Galacto-centric distributions of the $\sim1,500$ \gaia
-    DR2 RR Lyrae stars projected close to the OS on the sky. Only
-    stars with $|\phi_2|<4^{\circ}$ and $-300<v_l <-100$, $-300<v_b
-    <300$ are shown. {\it Left:} $X,Z$ plane. {\it Middle:} $Y,Z$
-    plane. {\it Right:} $X,Y$ plane. Note a prominent, narrow and long
-    stream-like over-density visible in all three panels.}
-   \label{fig:xyzgdr2}
-\end{figure*}
-%
-
-
-%
-\begin{figure*}
-  \centering
   \includegraphics[width=0.9\textwidth]{rrlyrae_selection_plot.pdf}
-  \caption[]{The selection of Orphan stream RR-Lyrae in various projections of the data. Each of the panels below shows the selection of stars from other panels.{\it Top panel:} The density of RR Lyrae on the sky in stream coordinates. The star selection used for this plot is using the distance and proper motion information. The blue band shows our selection region on the sky. {\it Middle panel:} The heliocentric distance to RR Lyrae as a function of angle along the stream. The sample of stars uses the selection based on the track on the sky and proper motion (defined in bottom and top panels). The blue band illustrates the selection band in distance. {\it Bottom panel:} The proper motion along $\phi_1$ vs the angle along the stream. The sample of stars shown on the panel is based on selections shown on top and middle panels. The blue band shows the selection based on proper motion.  }
+  \caption[]{The selection of Orphan stream RR-Lyrae in various
+    projections of the data. Each of the panels below shows the
+    selection of stars from other panels.{\it Top panel:} The density
+    of RR Lyrae on the sky in stream coordinates. The star selection
+    used for this plot is using the distance and proper motion
+    information. The blue band shows our selection region on the
+    sky. {\it Middle panel:} The heliocentric distance to RR Lyrae as
+    a function of angle along the stream. The sample of stars uses the
+    selection based on the track on the sky and proper motion (defined
+    in bottom and top panels). The blue band illustrates the selection
+    band in distance. {\it Bottom panel:} The proper motion along
+    $\phi_1$ vs the angle along the stream. The sample of stars shown
+    on the panel is based on selections shown on top and middle
+    panels. The blue band shows the selection based on proper motion.
+  }
    \label{fig:selection}
 \end{figure*}
 %
 
-
-\begin{figure*}
-  \centering
-  \includegraphics{gaia_fit_plot.pdf}
-  \caption[]{{\it Left panel:} The density distribution of Gaia red giant branch  stars in the Northern galactic hemisphere. The stars were selected based on color-magnitude and proper motions to be likely Orphan members. {\it Right panel:} The stream model.  }
-   \label{fig:gaia_rgb}
-\end{figure*}
-
-\begin{figure}
-  \centering
-  \includegraphics{gaia_fit_plot2.pdf}
-  \caption[]{{\it Top panel:} The track of Orphan stream as traced from by RR Lyrae in Gaia, RGB in Gaia and MSTO and RGB stars in DECALS survey. RR Lyrae are shown by blue points. The black line with error-bars shows the extracted track from Gaia RGB stars. The grey line shows the stream track from DECALS data. {\it Bottom panel:} The stream width (Gaussian $\sigma$) as a function of angle along the stream, as  measured from Gaia RGB stars (black line) and DECALS (grey line). }
-   \label{fig:selection}
-\end{figure}
-
-\begin{figure*}
-\includegraphics{decals_map.pdf}
-\caption{{\it Top panel:} The stellar density of matched filter selected stars near Orphan stream. We used the old metal-poor isochrone
-shifted to the distance of Orphan at each $\phi_1$ to define the matched filter. {\it Bottom panel:} The model of the stream.}
-\end{figure*}
-\begin{figure}
-\includegraphics{orphan_spec.pdf}
-\caption{The heliocentric radial velocity of the nothern stream stars selected by the position on the sky, proper motion and color-magnitudes.
-The stars within 1 degrees of the track of the stream are shown by solid grey circles, the stars between 1 and 2 degrees are shown 
-by black circles. We remark that the radial velocities are approaching zero near $\phi_1 \sim 30 $ deg, wher the heliocentric distances 
-reach the minimum (as seen on Fig.XXX)}
-\end{figure}
-
 %
-
-
 \begin{figure*}
   \centering
   \includegraphics[width=0.97\textwidth]{orphan_paper_xyz_members.pdf}
   \caption[]{Same as Figure~\ref{fig:xyzgdr2} but limited to likely OS
-    members (see Figure~\ref{fig:selection} and main text for
+    member RR Lyrae (see Figure~\ref{fig:selection} and main text for
     details). Long curved arrow shows the direction of motion of the
     OS, while the short straight arrow indicates the motion of the Sun
     (shown as grey filled circle at $(X,Y,Z)=(8,0,0)$.}
@@ -200,7 +200,57 @@ reach the minimum (as seen on Fig.XXX)}
 \end{figure*}
 %
 
+%
+\begin{figure*}
+  \centering
+  \includegraphics[width=0.9\textwidth]{orphan_paper_phi1_members.pdf}
+  \caption[]{Phase-space projections of the likely OS member RR Lyrae
+    as a function of the stream longitude $\phi_1$. {\it Top left:}
+    Positions of the OS stars on the sky in the stream-aligned
+    coordinates $\phi_1, phi_2$. {\it Top right:} Heliocentric
+    distance as a function of $\phi_1$. {\it Second row, left:} RA
+    component of proper motion $\mu_{\alpha}$. {\it Second row,
+      right:} Dec component of proper motion $\mu_{\delta}$. {\it
+      Third row, left:} Velocity component along Galactic longitude
+    $v_l$. {\it Third row, right:} Velocity component along Galactic
+    latitude $v_b$. {\it Bottom left:} Along-stream velocity
+    $v_{\phi,1}$. {\it Bottom right:} Across-stream velocity
+    $v_{\phi,2}$.}
+   \label{fig:memother}
+\end{figure*}
+%
+
+Here we provide the first all-sky map of the Orphan Stream mapped with
+a range of stellar tracers. We start with the \gaia DR2 (GDR2) RR
+Lyrae, the largest set of RR Lyrae available to date
+\citep[see][]{Clementini2018,Holl2018}. The \gaia DR2 RR Lyrae are
+identified and characterised in the optical where the
+period-luminosity relation is rather flat, thus yielding distance
+estimates inferior to those obtained using infrared data, but
+nonetheless very competitive, with typical uncertainties
+$<10\%$. Despite the high purity (outside of the Galactic plane) and
+impressive completeness (for heliocentric distances below 70 kpc), the
+GDR2 RR Lyrae sample remains relatively unexplored in terms of the
+Galactic halo studies \citep[e.g.][]{Iorio2018, Torrealba2018}. To
+complement the OS RR Lyrae detections we study the stream with other
+stellar tracers, including GDR2 Red Giants and DECALS (CITATIONS
+NEEDED) Red Giants Main Sequence Turn-off stars.
+
+This Paper is organised as follows. Section~\ref{sec:rrl} presents the
+details of the RR Lyrae selection from the Gaia DR2 data as well as
+the selection of the likely Orphan Stream members. The Section also
+gives the distributions of the OS RR Lyrae in various projections of
+the phase-space, spanned by the three spatial coordinates and two
+tangential velocities. Section~\ref{sec:rgb} maps the stream using
+Gaia Red Giant stars as well as using the matched filter technique
+applied to the deep DECaLS imaging. Additionally, the Section shows
+the OS Color-Magnitude Diagram and discusses the sub-set of the stream
+members with available SDSS
+spectroscopy. Finally. Section~\ref{sec:conc} puts the new detections
+of the stream into contexts and provides concluding remarks.
+
 \section{Orphan Stream with \gaia DR2 RR Lyrae}
+\label{sec:rrl}
 
 We select a high-purity all-sky sample of RR Lyrae candidate stars
 from two separate source catalogues released as part of the \gaia DR2
@@ -310,7 +360,7 @@ projections can be found in Figure~\ref{fig:memother}.
 Top left panel of the Figure presents the on-sky positions of the
 likely OS members in the stream-aligned coordinate system. Immediately
 apparent is the striking change of the stream curvature around
-$\phi_1\sim20^{\circ}$ - immediately after the stream re-emerges after
+$20^{\circ}<\phi_1<50^{\circ}$ - immediately after the stream re-emerges after
 passing through the Galactic disc - where the debris behavior changes
 from gently slopping down to sharply rising up in
 $\phi_2$. Additionally, in the Northern end of the stream, at
@@ -325,54 +375,241 @@ smoother. Therefore, some of the change in the proper motions (shown
 in the second row from the top) is due to the change in the
 line-of-sight distance.
 
+One extraordinary feature observed in Figure~\ref{fig:memother} is the
+strong deviation of the across-stream velocity component $v_{\phi,2}$
+from zero for $-50^{\circ}<\phi_1<0^{\circ}$. In this wide range of
+stream longitude - corresponding to the locations under the Galactic
+plane - $v_{\phi,2}\sim50$ km s$^{-1}$, while in the North
+$v_{\phi,2}$ is mostly consistent with 0 km s$^{-1}$. Note that in a
+static gravitational potential, the stars in a cold stellar stream are
+expected to move along to the direction delineated by the stream
+track, i.e. with $v_{\phi,2}\sim0^{\circ}$ (see e.g. Koposov et al
+2010, Erkal 2018 REFERENCES NEEDED). Exceptions to this rule are small
+regions around the location of the progenitor as well as near the
+apo-center. We conjecture that the observed misalignment between the
+motion of the RR Lyrae and the stream path is indicative of a strong
+perturbation experienced by the stream in not-so-distant past. A large
+and massive deflector is required to divert orbits of stars in such an
+extended portion of the stream.
+
+\section{OS stars in \Gaia, DECaLS and SDSS}
+\label{sec:rgb}
+
 %
 \begin{figure*}
-  \centering
-  \includegraphics[width=0.9\textwidth]{orphan_paper_phi1_members.pdf}
-  \caption[]{Phase-space projections of the likely OS member RR Lyrae
-    as a function of the stream longitude $\phi_1$. {\it Top left:}
-    Positions of the OS stars on the sky in the stream-aligned
-    coordinates $\phi_1, phi_2$. {\it Top right:} Heliocentric
-    distance as a function of $\phi_1$. {\it Second row, left:} RA
-    component of proper motion $\mu_{\alpha}$. {\it Second row,
-      right:} Dec component of proper motion $\mu_{\delta}$. {\it
-      Third row, left:} Velocity component along Galactic longitude
-    $v_l$. {\it Third row, right:} Velocity component along Galactic
-    latitude $v_b$. {\it Bottom left:} Along-stream velocity
-    $v_{\phi,1}$. {\it Bottom right:} Across-stream velocity
-    $v_{\phi,2}$.}
-   \label{fig:memother}
+  \centering \includegraphics{gaia_fit_plot.pdf}
+  \caption[]{{\it Left panel:} The density distribution of Gaia red
+    giant branch stars in the Northern galactic hemisphere. The stars
+    were selected based on color-magnitude and proper motions to be
+    likely Orphan members. {\it Right panel:} The stream model.  }
+   \label{fig:gaia_track}
 \end{figure*}
 %
 
-\section{OS with giants in \gaia and DECaLS}
+%
+\begin{figure*}
+\includegraphics{decals_map.pdf}
+\caption{{\it Top panel:} The stellar density of matched filter
+  selected stars near Orphan stream. We used the old metal-poor
+  isochrone shifted to the distance of Orphan at each $\phi_1$ to
+  define the matched filter. {\it Bottom panel:} The model of the
+  stream.}
+\label{fig:decals_track}
+\end{figure*}
+%
 
+\subsection{Track on the sky}
+
+Guided by the RR Lyrae detections, we now chart the locations of the
+OS debris using other stellar tracers. We start by identifying the
+stream's signal in the color-magnitude space. First, we use \Gaia's
+$G_{rm BP}$ and $G_{\rm RP}$ photometry corrected for
+extinction. DESCRIBE EXTINCTION CORRECTION. Stars are shifted back in
+helio-centric distances to correct for the distance evolution along
+the stream as dictated by the RR Lyrae (see previos Section). The
+tentative stream members are selected using their proximity to the OS
+on the sky, namely DESCRIBE SELECTION and in proper motion space,
+namely DESCRIBE SELECTION. The combination of these two cuts yields a
+clear overdensity in the CMD, which we trace using DESCRIBE CMD
+SELECTION. 
+
+Figure~\ref{fig:gaia_track} presents the view of the OS as seen with
+the GDR Red Giants. Left panel of the Figure shows the density of the
+OS RG candidates in the stream-aligned coordinates $\phi_1$ and
+$\phi_2$. Between $\phi_1\sim20^{\circ}$ and $\phi_1\sim120^{\circ}$,
+the stream is easily recognizable, but is hard to trace outside of
+this region. Below $\phi_1\sim20^{\circ}$, Galactic foreground starts
+to dominate, while above $\phi_1\sim120^{\circ}$, the stream moves too
+far away and its RG density drops below levels detectable in
+GDR2. Middle panel of Figure~\ref{fig:gaia_track} displays the
+best-fit model representing the data, both the stream and the Galactic
+foreground in the plane of $\phi_1$ and $\phi_2$. DESCRIBE THE
+MODEL. The right panel of the Figure shows the model residuals,
+demonstrating the quality of the reconstruction produced. A companion
+Figure~\ref{fig:decals_track} gives the similar information but for
+the DECaLS data. DESCRIBE THE DECALS MODELING.
+
+Figure~\ref{fig:compare_track} compares the properties of the stream
+tracks obtained using the GDR2 RR Lyrae (faint blue circles), the GDR2
+RGs (solid black) and the DECaLS matched-filtered data (solid
+grey). It is reassuring to see that the GDR2 RG and DECaLS $\phi_2$
+centroids of the tidal debris shown in the top panel of the Figure as
+a function of $\phi_1$ agree with each other as well as with the
+on-sky positions of the GDR2 RR Lyrae. Interestingly, for
+$70^{\circ}<\phi_1<100^{\circ}$, both GDR2 RG and DECaLS tracks show
+an offset downwards with respect to the RR Lyrae locations. This
+mismatch is small (i.e. well within the associated uncertainties) but
+systematic. Curiously, there aslo appears to be a slight inconsistency
+between the behavior of GDR2 RG and DECaLS RG/MSTO stars as
+demonstrated in the bottom panel of
+Figure~\ref{fig:compare_track}. Here, the width of the stream track is
+plotted as a function of $\phi_1$. In the same region of the sky, i.e
+$70^{\circ}<\phi_1<100^{\circ}$, the DECaLS-based measurements yields
+a slightly higher stream width compared to that deduced from the GDR2
+RG sample. One possible explanation of the minor inconsistencies in
+the stream track measurements with different stellar tracers could be
+the strong variation of the foreground in this portion of the sky. As
+Figure~\ref{fig:decals_track} demonstrates, the region with
+$70^{\circ}<\phi_1<90^{\circ}$ is affected by the presence of the
+prominent and broad Sagittarius tidal stream.
+
+\subsection{The Stream's CMD}
+
+Having clarified the distribution of the OS stars on the sky, we can
+now refine the stream's signal in the CMD. The Stream's Hess diagram
+(density of stars in the CMD space) based on the combination of GDR2
+and DECaLS data is shown in Figure~\ref{fig:cmd_decals} EXPLAIN FOR
+WHAT RANGE of PHI1. While \gaia comfortably detects the streams RR
+Lyrae and Red Giants, it is to shallow to reach the Main Sequence
+Turn-Off at the distances of the OS tidal debris. The addition of the
+deeper DECaLS data allows us to reach the MSTO and thus break the
+distance-metallicity degeneracy. Dark regions (corresponding to
+over-dense portions of the Hess diagram) in
+Figure~\ref{fig:cmd_decals} reveal familiar sub-sets of a co-distant
+and co-evol stellar population. The most prominent feature here is the
+Ref Giant branch, but a tight Horizontal Branch is also clearly
+visible attesting to the quality of the distance measurements. Less
+obvious, but also discernible are hints of the Asymptotic Giant Branch
+and perhaps even the Blue Stragglers. Given the presence of the MSTO
+and with an accurate distance measurement in hand we can overlay the
+appropriate isochrone. As evidenced from the Figure, an old metal-poor
+([Fe/H]=-2, blue line) isochrone is too bright for the Stream's MSTO
+and too steep for its RGB. An isochrone with [Fe/H]]-1.5 (red line)
+  does a better job at describing the OS stellar populations.
+
+Figure~\ref{fig:cmd_gaia} compares the CMDs constructed separately for
+the portion of the Stream detected in the Galactic North (left panel)
+and South (right panel). These Hess diagrams use \Gaia data only and
+apply cuts on the star's proximity to the OS track on the sky and in
+the proper motion space CLARIFY WHAT CUTS. Limited to the \gaia-only
+and North-only data, the Strem's CMD appears tidier than that shown in
+Figure~\ref{fig:cmd_decals}, albeit reaching only to the bottom of the
+RGB. The CMD of the Southern part of the Stream (right panel), on the
+other hand, looks clearly worse, most likely due to higher levels of
+Galactic extinction and foreground contamination. Nonetheless, the two
+Hess diagrams seem to share several features in common: the brighter
+portions of the RGB, the hints of the AGB and the HB. Given the large
+amount of noise in the Southern OS CMD, we can only conclude that the
+stream stellar populations below and above the Galactic disk are
+roughly consistent with each other, but slight differences are still
+permitted by the data in hand.
+
+\subsection{Stream's radial velocities in the SDSS}
+
+\section{Discussion and Conclusions}
+\label{sec:conc}
+
+We have provided an unprecedented view of the Orphan Stream based
+predominantly on the \Gaia DR2 RR Lyrae. These old and metal-poor
+pulsating stars are relatively numerous in the OS, with the average
+density of $\sim0.5$ per deg$^2$ and can be traced over $210^{\circ}$
+reaching distances of 60-70 kpc from the Sun on either side of the
+Galactic plane. Viewed with the GDR2 RR Lyrae, the OS appears long and
+eccentric, piercing the Milky Way's disk at around 10 kpc and reaching
+far into the Galactic halo, more or less in agreement with the earlier
+studies (CITATIONS NEEDED). At first glance, half of our stream
+detections appear new as they are located under the Galactic plane. As
+illustrated in Figure XXX, the Southern portion of the stream crosses
+the footprint of the Dark Energy Survey. On closer examination, it is
+evident that the Southern part of the Orphan Stream is entirely
+consistent with the DES stream Chenab \citep[see][]{Shipp2018}. It is
+likely that Chenab stars were not identified as Orphan's due to the
+dramatic twist in the OS track on the sky around
+$30^{\circ}<\phi_1<50^{\circ}$.
+
+%
+\begin{figure}
+  \centering \includegraphics{gaia_fit_plot2.pdf}
+  \caption[]{{\it Top panel:} The track of Orphan stream as traced
+    from by RR Lyrae in Gaia, RGB in Gaia and MSTO and RGB stars in
+    DECaLS survey. RR Lyrae are shown by blue points. The black line
+    with error-bars shows the extracted track from Gaia RGB stars. The
+    grey line shows the stream track from DECaLS data. {\it Bottom
+      panel:} The stream width (Gaussian $\sigma$) as a function of
+    angle along the stream, as measured from Gaia RGB stars (black
+    line) and DECaLS (grey line). }
+   \label{fig:compare_track}
+\end{figure}
+%
+
+%
 \begin{figure}
 \includegraphics{decals_gaia_cmd.pdf}
-\caption{The background subtracted absolute magnitude Hess diagram of the Nothern Orphan stream. We use the combination of DECALS DR7 and Gaia DR2 data. The stars 
-were selected based on Gaia proper motion $|\mu_{\phi,1}-\mu_{\phi,1,model}|<1$,
-$|\mu_{\phi,2}|<1$ (CHECK) and proximity to the stream track $|\phi_2 - \phi_{2,model}|<1$. The magnitudes are corrected by the distance modulus model determined from RRLyrae (see Fig. X). We overplot two old 12\,Gyr PARSEC isochrones for [Fe/H]=-2,-1.5.
-}
+\caption{The background subtracted absolute magnitude Hess diagram of
+  the Nothern Orphan stream. We use the combination of DECaLS DR7 and
+  Gaia DR2 data. The stars were selected based on Gaia proper motion
+  $|\mu_{\phi,1}-\mu_{\phi,1,model}|<1$, $|\mu_{\phi,2}|<1$ (CHECK)
+  and proximity to the stream track $|\phi_2 - \phi_{2,model}|<1$. The
+  magnitudes are corrected by the distance modulus model determined
+  from RRLyrae (see Fig. X). We overplot two old 12\,Gyr PARSEC
+  isochrones for [Fe/H]=-2,-1.5.  }
 \label{fig:cmd_decals}
 \end{figure}
+%
 
+%
 \begin{figure}
 \includegraphics{gaia_cmd.pdf}
-\caption{The Gaia based background subtracted Hess diagrams of the Northern and Souther parts of the stream. Similarly to Fig.~\ref{fig:cmd_decals} the stars were selected based on proper motion and proximity to the track on the sky. The right panel includes the data with $30<\phi_1<150$. The left panel includes data from $-40<\phi_1<-20$.}
+\caption{The Gaia based background subtracted Hess diagrams of the
+  Northern and Souther parts of the stream. Similarly to
+  Fig.~\ref{fig:cmd_decals} the stars were selected based on proper
+  motion and proximity to the track on the sky. The right panel
+  includes the data with $30<\phi_1<150$. The left panel includes data
+  from $-40<\phi_1<-20$.}
+\label{fig:cmd_gaia}
 \end{figure}
+%
+
+%
+\begin{figure}
+\includegraphics{orphan_spec.pdf}
+\caption{The heliocentric radial velocity of the nothern stream stars
+  selected by the position on the sky, proper motion and
+  color-magnitudes.  The stars within 1 degrees of the track of the
+  stream are shown by solid grey circles, the stars between 1 and 2
+  degrees are shown by black circles. We remark that the radial
+  velocities are approaching zero near $\phi_1 \sim 30 $ deg, wher the
+  heliocentric distances reach the minimum (as seen on Fig.XXX)}
+\label{fig:hrv}
+\end{figure}
+%
+
+
 \section*{Acknowledgments}
 
-We thank Michael for illuminating discussions. The research leading to
-these results has received funding from the European Research Council
-under the European Union's Seventh Framework Programme (FP/2007-2013)
-/ ERC Grant Agreement n. 308024. This research was started at the NYC
-Gaia DR2 Workshop at the Center for Computational Astrophysics of the
-Flatiron Institute in April 2018 and made use of data from the
-European Space Agency mission Gaia (http://www.cosmos.esa.int/gaia),
-processed by the Gaia Data Processing and Analysis Consortium (DPAC,
-http://www.cosmos.esa.int/web/gaia/dpac/consortium). Funding for the
-DPAC has been provided by national institutions, in particular the
-institutions participating in the Gaia Multilateral Agreement.
+We thank Michael for an illuminating discussion. The research leading
+to these results has received funding from the European Research
+Council under the European Union's Seventh Framework Programme
+(FP/2007-2013) / ERC Grant Agreement n. 308024.
+
+This work presents results from the European Space Agency (ESA) space
+mission Gaia. Gaia data are being processed by the Gaia Data
+Processing and Analysis Consortium (DPAC). Funding for the DPAC is
+provided by national institutions, in particular the institutions
+participating in the Gaia MultiLateral Agreement (MLA). The Gaia
+mission website is https://www.cosmos.esa.int/gaia. The Gaia archive
+website is https://archives.esac.esa.int/gaia.
+
 
 \bibliography{references}
 
